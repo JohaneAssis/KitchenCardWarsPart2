@@ -11,8 +11,8 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public GameObject placeholder = null;
 
-    public enum Slot { WEAPON, HEAD, CHEST, FEET, LEGS };
-    public Slot typeOfItem = Slot.WEAPON;
+    public enum Slot { HAND, CARD, ONPLAY };
+    public Slot typeOfItem;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -37,7 +37,7 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public void OnDrag(PointerEventData eventData)
     {
-       // Debug.Log("OnDrag");
+        // Debug.Log("OnDrag");
         this.transform.position = eventData.position;
         if (placeholder.transform.parent != placeholderParent)
         {
@@ -56,7 +56,7 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
                 {
                     newSiblingIndex--;
                 }
-              
+
                 break;
             }
         }

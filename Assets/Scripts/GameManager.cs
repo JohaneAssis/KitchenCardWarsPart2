@@ -133,19 +133,33 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         int choice = Random.Range(1, 3);
-        if (choice == 1)
+        if (choice == 1)                    //Attack the player
         {
-            player.GetComponent<Player>().health -= Random.Range(5, 10);
+            int dealtDamage = Random.Range(5, 10);
+            if (player.GetComponent<Player>().shield > 0)
+            {
+                if (dealtDamage > player.GetComponent<Player>().shield)
+                {
+                    int rollover = dealtDamage - player.GetComponent<Player>().shield;
+                    player.GetComponent<Player>().shield = 0;
+                    player.GetComponent<Player>().health -= rollover;
+                }
+                else
+
+                    player.GetComponent<Player>().shield -= dealtDamage;
+            }
+            else
+                player.GetComponent<Player>().health -= dealtDamage;
         }
 
-        if (choice == 2)
+        if (choice == 2)                    //Gives itself shield
         {
             enemy.GetComponent<Enemy>().shield += Random.Range(1, 5);
         }
 
-        if (choice == 3)
+        if (choice == 3)                    //Does nothing
         {
-            
+
         }
 
         yield return new WaitForSeconds(1.5f);

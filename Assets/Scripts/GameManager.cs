@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     GameObject          enemy;
     GameObject          player;
     GameObject          eventSystem;
+    public GameObject   winText;
+    public GameObject   loseText;
+
     Transform           hand;
+
     public GameObject[] Cards = new GameObject[10];
 
     bool                turnSwitch;
@@ -27,6 +32,9 @@ public class GameManager : MonoBehaviour
         turnSwitch = false;
         drawCards = false;
 
+        winText.SetActive(false);
+        loseText.SetActive(false);
+
         findObjects();    
     }
 
@@ -35,6 +43,11 @@ public class GameManager : MonoBehaviour
  //=======================================
     void Update()
     {
+        if (enemy == null)
+        {
+            winText.SetActive(true);
+        }
+
         switch (GameState)
         {
             case gameState.PLAYERTURN:
@@ -79,26 +92,6 @@ public class GameManager : MonoBehaviour
         player = GameObject.Find("Player");
         eventSystem = GameObject.Find("EventSystem");
         hand = GameObject.Find("Hand").transform;
-
-/*        if (enemy == null)
-            Debug.Log("This aint it Chief");
-        else
-            Debug.Log("Ladies and gentlemen... we got " + enemy.gameObject.name);
-
-        if (player == null)
-            Debug.Log("This aint it Chief");
-        else
-            Debug.Log("Ladies and gentlemen... we got " + player.gameObject.name);
-
-        if (eventSystem == null)
-            Debug.Log("This aint it Chief");
-        else
-            Debug.Log("Ladies and gentlemen... we got " + eventSystem.gameObject.name);
-
-        if (hand == null)
-            Debug.Log("This aint it Chief");
-        else
-            Debug.Log("Ladies and gentlemen... we got " + hand.gameObject.name); */
     }
 
     public void endTurn()
@@ -128,7 +121,16 @@ public class GameManager : MonoBehaviour
             Instantiate(Cards[Random.RandomRange(0, Cards.Length-1)], hand);
         }
     }
-    
+
+    //========================================
+    //              Coroutines
+    //========================================
+
+   /* IEnumerator BacktoMap()
+    {
+        yield return new WaitForSeconds(3f);
+    }*/
+
     IEnumerator enemyAction()
     {
         yield return new WaitForSeconds(1.5f);

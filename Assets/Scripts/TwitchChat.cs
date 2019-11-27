@@ -33,7 +33,7 @@ public class TwitchChat : MonoBehaviour
 
     private void Connect()
     {
-        twitchClient = new TcpClient("irc.chat.twitch.tv", 6667);
+        twitchClient = new TcpClient("irc://irc.chat.twitch.tv", 6667);
         reader = new StreamReader(twitchClient.GetStream());
         writer = new StreamWriter(twitchClient.GetStream());
         writer.WriteLine("PASS " + password);

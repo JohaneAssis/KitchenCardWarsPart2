@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winText: {fileID: 1933769774}
   loseText: {fileID: 1379610434}
+  button: {fileID: 541391404}
   Cards:
   - {fileID: 7880254583013794500, guid: 3c40958be16d73d45be0b640ed96d342, type: 3}
   - {fileID: 7880254583013794500, guid: 7af6da6be79de404d8b4a1d6df4b3dff, type: 3}
@@ -267,7 +268,7 @@ GameObject:
   - component: {fileID: 541391407}
   - component: {fileID: 541391406}
   m_Layer: 5
-  m_Name: Button
+  m_Name: EndTurn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

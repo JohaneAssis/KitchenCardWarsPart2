@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
     GameObject          eventSystem;
     public GameObject   winText;
     public GameObject   loseText;
+    public GameObject   button;
 
     Transform           hand;
 
@@ -45,7 +47,9 @@ public class GameManager : MonoBehaviour
     {
         if (enemy == null)
         {
+            button.GetComponent<Button>().interactable = false;
             winText.SetActive(true);
+            StartCoroutine("BacktoMap");
         }
 
         switch (GameState)
@@ -118,7 +122,7 @@ public class GameManager : MonoBehaviour
 
         for (int i = 1; i <= drawSize; i++)
         {
-            Instantiate(Cards[Random.RandomRange(0, Cards.Length-1)], hand);
+            Instantiate(Cards[Random.RandomRange(0, Cards.Length)], hand);
         }
     }
 
@@ -126,10 +130,11 @@ public class GameManager : MonoBehaviour
     //              Coroutines
     //========================================
 
-   /* IEnumerator BacktoMap()
+    IEnumerator BacktoMap()
     {
         yield return new WaitForSeconds(3f);
-    }*/
+        SceneManager.LoadScene("WorldMap");
+    }
 
     IEnumerator enemyAction()
     {

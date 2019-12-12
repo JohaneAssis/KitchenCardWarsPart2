@@ -257,14 +257,8 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="CymaticLabs.Unity3D.Amqp">
-      <HintPath>Assets/CymaticLabs/Amqp/Plugins/CymaticLabs.Unity3D.Amqp.dll</HintPath>
-    </Reference>
-    <Reference Include="RabbitMQ.Client">
-      <HintPath>Assets/CymaticLabs/Amqp/Plugins/RabbitMQ.Client.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Users/deadr/git/KitchenCardWars/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/deadr/git/KitchenCardWarsPart2/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\2019.2.9f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>

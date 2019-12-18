@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/SampleScene.unity
+=======
 - path: Assets/Scenes/DemoAsteroids-LobbyScene.unity
+>>>>>>> e3f494b5e96c37fb832c5310f3f60e2687e98770
   isLoaded: 1
   isActive: 1
   isSubScene: 0

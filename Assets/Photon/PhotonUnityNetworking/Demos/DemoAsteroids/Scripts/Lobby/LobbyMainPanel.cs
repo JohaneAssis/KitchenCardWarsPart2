@@ -263,6 +263,7 @@ namespace Photon.Pun.Demo.Asteroids
 
             //PhotonNetwork.LoadLevel("DemoAsteroids-GameScene");
             PhotonNetwork.LoadLevel("WorldMap");
+            //PhotonNetwork.LoadLevel("SampleScene");
         }
 
         #endregion

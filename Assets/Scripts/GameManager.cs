@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
 public class GameManager : MonoBehaviour
 {
-    GameObject          enemy;
+    public GameObject   enemy;
     GameObject          player;
     GameObject          eventSystem;
     public GameObject   winText;
@@ -46,6 +47,7 @@ public class GameManager : MonoBehaviour
         if (enemy == null)
         {
             winText.SetActive(true);
+            StartCoroutine("BackToMap");
         }
 
         switch (GameState)
@@ -126,10 +128,11 @@ public class GameManager : MonoBehaviour
     //              Coroutines
     //========================================
 
-   /* IEnumerator BacktoMap()
+    IEnumerator BackToMap()
     {
         yield return new WaitForSeconds(3f);
-    }*/
+        SceneManager.LoadScene("WorldMap");
+    }
 
     IEnumerator enemyAction()
     {

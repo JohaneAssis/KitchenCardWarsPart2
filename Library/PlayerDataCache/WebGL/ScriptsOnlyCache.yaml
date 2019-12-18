@@ -30,6 +30,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.Utilities.dll:
     - Photon.Pun.UtilityScripts.EventSystemSpawner
     - Photon.Pun.UtilityScripts.PlayerNumbering
@@ -49,10 +51,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -153,39 +153,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 11208}
+      Script: {instanceID: 11206}
     - Class: 114
-      Script: {instanceID: 11218}
+      Script: {instanceID: 11216}
     - Class: 114
-      Script: {instanceID: 11232}
+      Script: {instanceID: 11230}
     - Class: 114
-      Script: {instanceID: 11246}
+      Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 11266}
+      Script: {instanceID: 11264}
     - Class: 114
-      Script: {instanceID: 11374}
+      Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11458}
     - Class: 114
-      Script: {instanceID: 11466}
+      Script: {instanceID: 11464}
     - Class: 114
-      Script: {instanceID: 11598}
+      Script: {instanceID: 11596}
     - Class: 114
-      Script: {instanceID: 11608}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 12004}
+      Script: {instanceID: 12002}
     - Class: 114
-      Script: {instanceID: 12044}
+      Script: {instanceID: 12042}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12126}
+      Script: {instanceID: 12124}
     - Class: 114
-      Script: {instanceID: 12134}
+      Script: {instanceID: 12132}
     - Class: 114
-      Script: {instanceID: 12166}
+      Script: {instanceID: 12164}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -260,6 +260,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10658}
     - Class: 114
+      Script: {instanceID: 10836}
+    - Class: 114
       Script: {instanceID: 10856}
     - Class: 114
       Script: {instanceID: 10970}
@@ -270,15 +272,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11090}
     - Class: 114
-      Script: {instanceID: 11266}
+      Script: {instanceID: 11264}
     - Class: 114
-      Script: {instanceID: 11608}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 12090}
+      Script: {instanceID: 12002}
     - Class: 114
-      Script: {instanceID: 12134}
+      Script: {instanceID: 12088}
     - Class: 114
-      Script: {instanceID: 18522}
+      Script: {instanceID: 12132}
+    - Class: 114
+      Script: {instanceID: 21662}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -347,21 +351,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10670}
     - Class: 114
-      Script: {instanceID: 11298}
+      Script: {instanceID: 11296}
     - Class: 114
-      Script: {instanceID: 11430}
+      Script: {instanceID: 11428}
     - Class: 114
-      Script: {instanceID: 11604}
+      Script: {instanceID: 11602}
     - Class: 114
-      Script: {instanceID: 11608}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 11730}
+      Script: {instanceID: 11728}
     - Class: 114
-      Script: {instanceID: 11948}
+      Script: {instanceID: 11946}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 12036}
     - Class: 114
-      Script: {instanceID: 12090}
+      Script: {instanceID: 12088}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2178,4 +2182,4 @@ ScriptsOnlyBuild:
   - Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-LobbyScene.unity
   - Assets/Scenes/WorldMap.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/Johane/Desktop/Builds
+  playerPath: C:/Users/deadr/git/KitchenCardWarsPart2/Builds_WebGL

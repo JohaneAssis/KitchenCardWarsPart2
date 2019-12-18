@@ -166,6 +166,11 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LevelSelection.cs" />
     <Compile Include="Assets\Scripts\NodeAnimation.cs" />
+    <Compile Include="Assets\Scripts\Photon Instantiating\InstantiateExample.cs" />
+    <Compile Include="Assets\Scripts\Photon Instantiating\Managers\GameSettings.cs" />
+    <Compile Include="Assets\Scripts\Photon Instantiating\Managers\MasterManager\MasterManager.cs" />
+    <Compile Include="Assets\Scripts\Photon Instantiating\Managers\MasterManager\NetworkedPrefab.cs" />
+    <Compile Include="Assets\Scripts\Photon Instantiating\Managers\SingletonScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\SpawnNGone.cs" />
     <Compile Include="Assets\Scripts\TwitchChat.cs" />

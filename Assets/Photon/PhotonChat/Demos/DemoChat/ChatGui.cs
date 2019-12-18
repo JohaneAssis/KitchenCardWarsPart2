@@ -417,7 +417,7 @@ public class ChatGui : MonoBehaviour, IChatClientListener
 		// in this demo, we simply send a message into each channel. This is NOT a must have!
 		foreach (string channel in channels)
 		{
-			this.chatClient.PublishMessage(channel, "says 'hi'."); // you don't HAVE to send a msg on join but you could.
+			this.chatClient.PublishMessage(channel, "has entered the channel"); // you don't HAVE to send a msg on join but you could.
 
 			if (this.ChannelToggleToInstantiate != null)
 			{

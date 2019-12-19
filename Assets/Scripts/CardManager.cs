@@ -16,6 +16,7 @@ public class CardManager : MonoBehaviour
     public GameObject CardActiveButton;
     public GameObject CardActiveCanvas;
     public GameObject backButton;
+    GameObject copy;
 
     public Text[] texts;
     //[0] Attack text
@@ -31,13 +32,20 @@ public class CardManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
             created = true;
             Debug.Log("Awake: " + this.gameObject);
+
+            /*
+            copy = GameObject.Find("Card Manager").gameObject;
+            if (copy != null)
+            {
+                Destroy(copy);
+            }
+            this.gameObject.name = "Card Manager";
+            */
         }
     }
 
     public void Start()
     {
-        //DontDestroyOnLoad(this.gameObject);
-
         attackCard = true;
         energyCard = true;
         healthCard = true;

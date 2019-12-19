@@ -6,28 +6,35 @@ using Photon.Pun;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject   enemy;
-    GameObject          player;
-    GameObject          eventSystem;
-    public GameObject   winText;
-    public GameObject   loseText;
+    public GameObject       enemy;
+    GameObject              player;
+    GameObject              eventSystem;
+    public GameObject       winText;
+    public GameObject       loseText;
+    public GameObject       cardManagement;
 
-    public bool AttackCard;
-    public bool EnergyCard;
-    public bool HealthCard;
-    public bool ShieldCard;
-    public bool VampireCard;
-    public GameObject trueHands;
+    public bool             AttackCard;
+    public bool             EnergyCard;
+    public bool             HealthCard;
+    public bool             ShieldCard;
+    public bool             VampireCard;
+    public List <GameObject>     trueHands;
 
-    Transform           hand;
+    Transform               hand;
 
-    public GameObject[] Cards = new GameObject[10];
+    public GameObject[]     Cards = new GameObject[10];
+    //[0] attack
+    //[1] energy
+    //[2] health
+    //[3] shield
+    //[4] vampire
 
-    bool                turnSwitch;
-    bool                turnSwitch2;
-    bool                drawCards;
+    bool                    turnSwitch;
+    bool                    turnSwitch2;
+    bool                    drawCards;
+    bool                    gottenCards;
 
-    int          maxHandSize = 7;
+    public int              maxHandSize = 7;
 
     enum gameState
     {
@@ -39,6 +46,7 @@ public class GameManager : MonoBehaviour
         GameState = gameState.PLAYERTURN;
         turnSwitch = false;
         drawCards = false;
+        gottenCards = false;
 
         winText.SetActive(false);
         loseText.SetActive(false);
@@ -51,6 +59,11 @@ public class GameManager : MonoBehaviour
  //=======================================
     void Update()
     {
+        if (gottenCards == false)
+        {
+            getTheCards();
+        }
+
         if (enemy == null)
         {
             winText.SetActive(true);
@@ -101,8 +114,36 @@ public class GameManager : MonoBehaviour
         player = GameObject.Find("Player");
         eventSystem = GameObject.Find("EventSystem");
         hand = GameObject.Find("Hand").transform;
+        cardManagement = GameObject.Find("CardManager");
+    }
 
+    public void getTheCards()
+    {
+        if (cardManagement != null)
+        {
+            AttackCard = cardManagement.GetComponent<CardManager>().attackCard;
+            if (AttackCard == true)
+                trueHands.Add(Cards[0]);
 
+            EnergyCard = cardManagement.GetComponent<CardManager>().energyCard;
+            if (EnergyCard == true)
+                trueHands.Add(Cards[1]);
+
+            HealthCard = cardManagement.GetComponent<CardManager>().healthCard;
+            if (HealthCard == true)
+                trueHands.Add(Cards[2]);
+
+            ShieldCard = cardManagement.GetComponent<CardManager>().shieldCard;
+            if (ShieldCard == true)
+                trueHands.Add(Cards[3]);
+
+            VampireCard = cardManagement.GetComponent<CardManager>().vampireCard;
+            if (VampireCard == true)
+                trueHands.Add(Cards[4]);
+
+            trueHands.RemoveAt(0);
+            gottenCards = true;
+        }
     }
 
     public void endTurn()
@@ -129,7 +170,7 @@ public class GameManager : MonoBehaviour
 
         for (int i = 1; i <= drawSize; i++)
         {
-            Instantiate(Cards[Random.RandomRange(0, Cards.Length)], hand);
+            Instantiate(trueHands[Random.RandomRange(0, trueHands.Count)], hand);
         }
     }
 

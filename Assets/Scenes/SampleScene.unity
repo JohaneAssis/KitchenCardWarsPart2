@@ -153,6 +153,14 @@ MonoBehaviour:
   enemy: {fileID: 0}
   winText: {fileID: 1933769774}
   loseText: {fileID: 1379610434}
+  cardManagement: {fileID: 0}
+  AttackCard: 0
+  EnergyCard: 0
+  HealthCard: 0
+  ShieldCard: 0
+  VampireCard: 0
+  trueHands:
+  - {fileID: 0}
   Cards:
   - {fileID: 7880254583013794500, guid: 3c40958be16d73d45be0b640ed96d342, type: 3}
   - {fileID: 7880254583013794500, guid: 7af6da6be79de404d8b4a1d6df4b3dff, type: 3}

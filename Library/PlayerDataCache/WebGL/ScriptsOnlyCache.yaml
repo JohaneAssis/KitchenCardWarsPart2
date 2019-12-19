@@ -85,6 +85,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ToggleGroup
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
+<<<<<<< HEAD
     Assets/Photon/PhotonChat/Demos/DemoChat/DemoChat-Scene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -171,6 +172,9 @@ ScriptsOnlyBuild:
     - Class: 225
       Script: {instanceID: 0}
     Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-LobbyScene.unity:
+=======
+    Assets/Scenes/MatchmakingLobbyScene.unity:
+>>>>>>> 6cdd3cec10d21df3ec22836077acb28a29dbae86
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -254,10 +258,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11250}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11270}
+=======
+      Script: {instanceID: 11244}
+>>>>>>> 6cdd3cec10d21df3ec22836077acb28a29dbae86
     - Class: 114
       Script: {instanceID: 11378}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11452}
     - Class: 114
       Script: {instanceID: 11464}
@@ -265,6 +274,25 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11470}
     - Class: 114
       Script: {instanceID: 11602}
+=======
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11372}
+    - Class: 114
+      Script: {instanceID: 11446}
+    - Class: 114
+      Script: {instanceID: 11458}
+    - Class: 114
+      Script: {instanceID: 11464}
+    - Class: 114
+      Script: {instanceID: 11596}
+    - Class: 114
+      Script: {instanceID: 11606}
+    - Class: 114
+      Script: {instanceID: 12002}
+    - Class: 114
+      Script: {instanceID: 12008}
+>>>>>>> 6cdd3cec10d21df3ec22836077acb28a29dbae86
     - Class: 114
       Script: {instanceID: 11612}
     - Class: 114
@@ -276,9 +304,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12134}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 12142}
     - Class: 114
       Script: {instanceID: 12174}
+=======
+      Script: {instanceID: 12150}
+    - Class: 114
+      Script: {instanceID: 12164}
+>>>>>>> 6cdd3cec10d21df3ec22836077acb28a29dbae86
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -353,9 +387,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10490}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 10664}
     - Class: 114
       Script: {instanceID: 10842}
+=======
+      Script: {instanceID: 10836}
+    - Class: 114
+      Script: {instanceID: 10856}
+>>>>>>> 6cdd3cec10d21df3ec22836077acb28a29dbae86
     - Class: 114
       Script: {instanceID: 10862}
     - Class: 114
@@ -369,15 +409,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11270}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 11612}
     - Class: 114
       Script: {instanceID: 12010}
+=======
+      Script: {instanceID: 12002}
+    - Class: 114
+      Script: {instanceID: 12088}
+>>>>>>> 6cdd3cec10d21df3ec22836077acb28a29dbae86
     - Class: 114
       Script: {instanceID: 12098}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 12142}
     - Class: 114
       Script: {instanceID: 18692}
+=======
+      Script: {instanceID: 40588}
+>>>>>>> 6cdd3cec10d21df3ec22836077acb28a29dbae86
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -491,8 +541,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+<<<<<<< HEAD
     - Class: 225
       Script: {instanceID: 0}
+=======
+>>>>>>> 6cdd3cec10d21df3ec22836077acb28a29dbae86
   scriptHashData:
   - hash:
       serializedVersion: 2
@@ -2314,8 +2367,15 @@ ScriptsOnlyBuild:
     className: CardManager
   platform: 20
   scenePathNames:
+<<<<<<< HEAD
   - Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-LobbyScene.unity
   - Assets/Scenes/WorldMap.unity
   - Assets/Scenes/SampleScene.unity
   - Assets/Photon/PhotonChat/Demos/DemoChat/DemoChat-Scene.unity
   playerPath: C:/Users/deadr/git/KitchenCardWarsPart2/Builds_WebGL
+=======
+  - Assets/Scenes/MatchmakingLobbyScene.unity
+  - Assets/Scenes/WorldMap.unity
+  - Assets/Scenes/SampleScene.unity
+  playerPath: C:/Users/Johane/Documents/IT490git/KitchenCardWarsV2/KitchenCardWars/Builds_WebGL
+>>>>>>> 6cdd3cec10d21df3ec22836077acb28a29dbae86

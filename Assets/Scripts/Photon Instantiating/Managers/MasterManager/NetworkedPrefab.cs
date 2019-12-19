@@ -19,8 +19,8 @@ public class NetworkedPrefab
     private string ReturnPrefabPathModified(string path)
     {
         int extensionLength = System.IO.Path.GetExtension(path).Length;
-        int additionalLength = 10;
-        int startIndex = path.ToLower().IndexOf("resources");
+        int additionalLength = 8;
+        int startIndex = path.ToLower().IndexOf("prefabs");
 
         if (startIndex == -1)
             return string.Empty;

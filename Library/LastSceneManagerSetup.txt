@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/MatchmakingLobbyScene.unity
+=======
+- path: Assets/Scenes/WorldMap.unity
+>>>>>>> 8af70d3e0a1998daaa82c2bc1e7b2c83f44f2b71
   isLoaded: 1
   isActive: 1
   isSubScene: 0

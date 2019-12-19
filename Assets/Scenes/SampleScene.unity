@@ -153,6 +153,14 @@ MonoBehaviour:
   enemy: {fileID: 0}
   winText: {fileID: 1933769774}
   loseText: {fileID: 1379610434}
+  cardManagement: {fileID: 0}
+  AttackCard: 0
+  EnergyCard: 0
+  HealthCard: 0
+  ShieldCard: 0
+  VampireCard: 0
+  trueHands:
+  - {fileID: 0}
   Cards:
   - {fileID: 7880254583013794500, guid: 3c40958be16d73d45be0b640ed96d342, type: 3}
   - {fileID: 7880254583013794500, guid: 7af6da6be79de404d8b4a1d6df4b3dff, type: 3}
@@ -1437,6 +1445,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eggplant
       objectReference: {fileID: 0}
+    - target: {fileID: 1152460067770235346, guid: 42a0cdd4da5543f46b3835114eb221f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 437866704500128764, guid: 42a0cdd4da5543f46b3835114eb221f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1560,6 +1573,21 @@ PrefabInstance:
     - target: {fileID: 1567091028, guid: 42a0cdd4da5543f46b3835114eb221f0, type: 3}
       propertyPath: viewIdField
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924127830375718564, guid: 42a0cdd4da5543f46b3835114eb221f0,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924127830375718564, guid: 42a0cdd4da5543f46b3835114eb221f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924127830375718564, guid: 42a0cdd4da5543f46b3835114eb221f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42a0cdd4da5543f46b3835114eb221f0, type: 3}

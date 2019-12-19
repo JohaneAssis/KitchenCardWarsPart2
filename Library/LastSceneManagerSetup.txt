@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/MatchmakingLobbyScene.unity
-=======
-- path: Assets/Scenes/DemoAsteroids-LobbyScene.unity
->>>>>>> b0132920b6025a6a89f37428c422512c3903ce6b
   isLoaded: 1
   isActive: 1
   isSubScene: 0

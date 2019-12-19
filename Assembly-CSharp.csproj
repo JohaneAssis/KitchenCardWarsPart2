@@ -158,6 +158,7 @@
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\Prefabs\SFX\Particle\FloatNShrink.cs" />
     <Compile Include="Assets\Scripts\Card.cs" />
+    <Compile Include="Assets\Scripts\CardManager.cs" />
     <Compile Include="Assets\Scripts\CheckButton.cs" />
     <Compile Include="Assets\Scripts\DBTry.cs" />
     <Compile Include="Assets\Scripts\Dragable.cs" />

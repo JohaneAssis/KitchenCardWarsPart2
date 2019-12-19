@@ -1437,6 +1437,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eggplant
       objectReference: {fileID: 0}
+    - target: {fileID: 1152460067770235346, guid: 42a0cdd4da5543f46b3835114eb221f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 437866704500128764, guid: 42a0cdd4da5543f46b3835114eb221f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1560,6 +1565,21 @@ PrefabInstance:
     - target: {fileID: 1567091028, guid: 42a0cdd4da5543f46b3835114eb221f0, type: 3}
       propertyPath: viewIdField
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924127830375718564, guid: 42a0cdd4da5543f46b3835114eb221f0,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924127830375718564, guid: 42a0cdd4da5543f46b3835114eb221f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924127830375718564, guid: 42a0cdd4da5543f46b3835114eb221f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42a0cdd4da5543f46b3835114eb221f0, type: 3}

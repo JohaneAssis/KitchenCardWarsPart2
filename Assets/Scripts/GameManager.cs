@@ -12,6 +12,13 @@ public class GameManager : MonoBehaviour
     public GameObject   winText;
     public GameObject   loseText;
 
+    public bool AttackCard;
+    public bool EnergyCard;
+    public bool HealthCard;
+    public bool ShieldCard;
+    public bool VampireCard;
+    public GameObject trueHands;
+
     Transform           hand;
 
     public GameObject[] Cards = new GameObject[10];
@@ -94,6 +101,8 @@ public class GameManager : MonoBehaviour
         player = GameObject.Find("Player");
         eventSystem = GameObject.Find("EventSystem");
         hand = GameObject.Find("Hand").transform;
+
+
     }
 
     public void endTurn()
@@ -120,7 +129,7 @@ public class GameManager : MonoBehaviour
 
         for (int i = 1; i <= drawSize; i++)
         {
-            Instantiate(Cards[Random.RandomRange(0, Cards.Length-1)], hand);
+            Instantiate(Cards[Random.RandomRange(0, Cards.Length)], hand);
         }
     }
 

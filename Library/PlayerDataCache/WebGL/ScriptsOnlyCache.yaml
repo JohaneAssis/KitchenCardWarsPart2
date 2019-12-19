@@ -120,21 +120,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9700}
+      Script: {instanceID: 9694}
     - Class: 114
-      Script: {instanceID: 9820}
+      Script: {instanceID: 9816}
     - Class: 114
-      Script: {instanceID: 9866}
+      Script: {instanceID: 9864}
     - Class: 114
-      Script: {instanceID: 9886}
+      Script: {instanceID: 9884}
     - Class: 114
-      Script: {instanceID: 9890}
+      Script: {instanceID: 9888}
+    - Class: 114
+      Script: {instanceID: 9922}
     - Class: 114
       Script: {instanceID: 9924}
     - Class: 114
-      Script: {instanceID: 9926}
-    - Class: 114
-      Script: {instanceID: 9968}
+      Script: {instanceID: 9966}
     - Class: 114
       Script: {instanceID: 10038}
     - Class: 114
@@ -200,19 +200,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12016}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 12052}
     - Class: 114
-      Script: {instanceID: 12056}
+      Script: {instanceID: 12058}
     - Class: 114
-      Script: {instanceID: 12112}
+      Script: {instanceID: 12114}
     - Class: 114
-      Script: {instanceID: 12132}
+      Script: {instanceID: 12134}
     - Class: 114
-      Script: {instanceID: 12140}
+      Script: {instanceID: 12142}
     - Class: 114
-      Script: {instanceID: 12158}
+      Script: {instanceID: 12160}
     - Class: 114
-      Script: {instanceID: 12172}
+      Script: {instanceID: 12174}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -269,11 +269,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9700}
+      Script: {instanceID: 9694}
     - Class: 114
-      Script: {instanceID: 9924}
+      Script: {instanceID: 9840}
     - Class: 114
-      Script: {instanceID: 9968}
+      Script: {instanceID: 9922}
+    - Class: 114
+      Script: {instanceID: 9966}
     - Class: 114
       Script: {instanceID: 9984}
     - Class: 114
@@ -305,13 +307,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12010}
     - Class: 114
-      Script: {instanceID: 12096}
+      Script: {instanceID: 12098}
     - Class: 114
-      Script: {instanceID: 12140}
+      Script: {instanceID: 12142}
     - Class: 114
-      Script: {instanceID: 14264}
-    - Class: 114
-      Script: {instanceID: 18960}
+      Script: {instanceID: 20394}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -366,11 +366,11 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9700}
+      Script: {instanceID: 9694}
     - Class: 114
-      Script: {instanceID: 9924}
+      Script: {instanceID: 9922}
     - Class: 114
-      Script: {instanceID: 9968}
+      Script: {instanceID: 9966}
     - Class: 114
       Script: {instanceID: 9984}
     - Class: 114
@@ -398,15 +398,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11612}
     - Class: 114
-      Script: {instanceID: 11734}
-    - Class: 114
-      Script: {instanceID: 11804}
+      Script: {instanceID: 11736}
     - Class: 114
       Script: {instanceID: 11954}
     - Class: 114
-      Script: {instanceID: 12044}
+      Script: {instanceID: 12046}
     - Class: 114
-      Script: {instanceID: 12096}
+      Script: {instanceID: 12098}
+    - Class: 114
+      Script: {instanceID: 12348}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -482,6 +482,12 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 88734c64b594ed8587c96886b09516d3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MasterManager
+  - hash:
+      serializedVersion: 2
       Hash: 626925ef558787b2d85c809198164d19
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -552,6 +558,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: LayoutElementMatchSize
+  - hash:
+      serializedVersion: 2
+      Hash: aad690be56e4265f5de9f49a27456cf4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InstantiateExample
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -654,6 +666,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: cbf6f7a7b6384a8d4bbae402d793925b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameSettings
   - hash:
       serializedVersion: 2
       Hash: 1d23007f26624b3e9d60e09f430492cc
@@ -1886,12 +1904,6 @@ ScriptsOnlyBuild:
     className: LeanEvent
   - hash:
       serializedVersion: 2
-      Hash: 903ee01176ba9ec756028bf1a785a43c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CardManager
-  - hash:
-      serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -2228,25 +2240,13 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 88734c64b594ed8587c96886b09516d3
+      Hash: 903ee01176ba9ec756028bf1a785a43c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MasterManager
-  - hash:
-      serializedVersion: 2
-      Hash: aad690be56e4265f5de9f49a27456cf4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: InstantiateExample
-  - hash:
-      serializedVersion: 2
-      Hash: cbf6f7a7b6384a8d4bbae402d793925b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameSettings
+    className: CardManager
   platform: 20
   scenePathNames:
   - Assets/Scenes/MatchmakingLobbyScene.unity
   - Assets/Scenes/WorldMap.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/deadr/git/KitchenCardWarsPart2/Builds_WebGL
+  playerPath: C:/Users/Johane/Documents/IT490git/KitchenCardWarsV2/KitchenCardWars/Builds_WebGL
